@@ -1,5 +1,13 @@
 const orm = require("../config/orm");
 
-// TODO
+class Burger {
+  constructor ({ burger_name, devoured }) {
+    this.burger_name = burger_name;
+    this.devoured = devoured;
+  }
 
-module.exports = burger;
+  // TODO: Add class methods
+
+}
+
+module.exports = Burger;
