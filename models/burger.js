@@ -1,31 +1,25 @@
 // Import dependencies
-const { selectAll, selectById, insertOne, updateOne } = require("../config/orm");
+const { selectAll, insertOne, updateOne } = require("../config/orm");
 
 // Define Burger class
 class Burger {
-  constructor ({ burgerName, devoured = false }) {
+  constructor ({ burgerName }) {
     this.burgerName = burgerName;
-    this.devoured = devoured;
   }
 
   // Define selectBurgers method
   static async selectAllBurgers () {
-    return selectAll();
-  }
-
-  // Define selectBurgerById method
-  static async selectBurgerById (id) {
-    return selectById(id);
+    return await selectAll();
   }
 
   // Define insertBurger method
   async insertOneBurger () {
-    return insertOne(this.burgerName);
+    return await insertOne(this.burgerName);
   }
 
   // Define updateBurger method
-  async updateOneBurger () {
-    return updateOne(this.id);
+  static async updateOneBurger (id) {
+    return await updateOne(id);
   }
 }
 

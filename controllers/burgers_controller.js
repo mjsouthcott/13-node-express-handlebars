@@ -1,17 +1,17 @@
 // Import dependencies
-const router = require("express").router();
+const router = require("express").Router();
 const Burger = require("../models/burger");
 
 // HTML route
 router.get('/', async (req, res) => {
-  const data = await Burger.selectBurgers();
-  res.render('index', { burgers: data });
+  const burgers = await Burger.selectAllBurgers();
+  res.render('index', { burgers: burgers });
 });
 
 // API routes
 router.get('/api/burgers', async (req, res) => {
   try {
-    const burgers = await Burger.selectBurgers();
+    const burgers = await Burger.selectAllBurgers();
     res.status(200).json({ data: burgers });
   } catch (err) {
     res.status(500).json(err);
@@ -21,19 +21,17 @@ router.get('/api/burgers', async (req, res) => {
 router.post('/api/burgers', async (req, res) => {
   try {
     const burger = new Burger(req.body);
-    await burger.insertOneBurger();
-    res.status(201).json(burger);
+    const results = await burger.insertOneBurger();
+    res.status(201).json(results);
   } catch (err) {
     res.status(500).json(err)
   }
 });
 
 router.patch('/api/burgers/:id', async (req, res) => {
-  let burger = await Burger.selectBurgerById(req.params.id);
-  if (!burger) return res.status(404).end();
   try {
-    await burger.updateOneBurger();
-    res.status(200).json(burger);
+    const results = await Burger.updateOneBurger(req.params.id);
+    res.status(200).json(results);
   } catch (err) {
     res.status(500).json(err);
   }

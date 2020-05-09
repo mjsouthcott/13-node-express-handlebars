@@ -10,13 +10,6 @@ const orm = {
     return rows;
   },
 
-  // Define selectById method
-  selectById: async (id) => {
-    const sql = "SELECT * FROM burgers WHERE id = ?";
-    const [rows] = await connection.query(sql, parseInt(id));
-    return rows;
-  },
-
   // Define insertOne method
   insertOne: async (burgerName) => {
     const sql = "INSERT INTO burgers (`burger_name`) VALUES (?);";
