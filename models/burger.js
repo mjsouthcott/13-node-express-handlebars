@@ -1,5 +1,7 @@
+// Import dependencies
 const orm = require("../config/orm");
 
+// Define Burger class
 class Burger {
   constructor ({ burger_name, devoured = 0 }) {
     this.burger_name = burger_name;
@@ -22,4 +24,5 @@ class Burger {
   }
 }
 
+// Export Burger class
 module.exports = Burger;
