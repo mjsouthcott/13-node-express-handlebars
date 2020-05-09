@@ -6,10 +6,10 @@ CREATE DATABASE burgers_db;
 USE burgers_db;
 
 -- Create burgers table
-CREATE TABLE burgers
+CREATE TABLE `burgers`
 (
-  id INTEGER NOT NULL AUTO_INCREMENT,
-  burger_name VARCHAR (30),
-  devoured BOOLEAN,
+  `id` INTEGER NOT NULL AUTO_INCREMENT,
+  `burger_name` VARCHAR (255) NOT NULL,
+  `devoured` BOOLEAN DEFAULT false,
   PRIMARY KEY (id)
 );

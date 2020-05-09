@@ -10,17 +10,24 @@ const orm = {
     return rows;
   },
 
+  // Define selectById method
+  selectById: async (id) => {
+    const sql = "SELECT * FROM burgers WHERE id = ?";
+    const [rows] = await connection.query(sql, parseInt(id));
+    return rows;
+  },
+
   // Define insertOne method
-  insertOne: async (burgerName, isDevoured) => {
-    const sql = "INSERT INTO burgers (burger_name, devoured) VALUES (?, ?);";
-    const [results] = await connection.query(sql, [burgerName, isDevoured])
+  insertOne: async (burgerName) => {
+    const sql = "INSERT INTO burgers (`burger_name`) VALUES (?);";
+    const [results] = await connection.query(sql, burgerName);
     return results;
   },
 
   // Define updateOne method
-  updateOne: async (burger_name) => {
-    const sql = "UPDATE burgers SET `devoured` = 1 WHERE burger_name = ?";
-    const [results] = await connection.query(sql, burger_name)
+  updateOne: async (id) => {
+    const sql = "UPDATE burgers SET `devoured` = true WHERE id = ?";
+    const [results] = await connection.query(sql, parseInt(id));
     return results;
   }
 }

@@ -21,7 +21,7 @@ router.get('/api/burgers', async (req, res) => {
 router.post('/api/burgers', async (req, res) => {
   try {
     const burger = new Burger(req.body);
-    await burger.insertBurger();
+    await burger.insertOneBurger();
     res.status(201).json(burger);
   } catch (err) {
     res.status(500).json(err)
@@ -29,10 +29,10 @@ router.post('/api/burgers', async (req, res) => {
 });
 
 router.patch('/api/burgers/:id', async (req, res) => {
-  const burger = Object.assign(burger, req.body, { id: req.params.id });
+  let burger = await Burger.selectBurgerById(req.params.id);
   if (!burger) return res.status(404).end();
   try {
-    await burger.updateBurger();
+    await burger.updateOneBurger();
     res.status(200).json(burger);
   } catch (err) {
     res.status(500).json(err);
