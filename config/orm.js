@@ -18,7 +18,7 @@ const orm = {
   },
 
   // Define updateOne() method
-  updateOne: async () => {
+  updateOne: async (burger_name) => {
     const sql = "UPDATE burgers SET `devoured` = 1 WHERE burger_name = ?";
     const [rows] = await connection.query(sql, burger_name)
     return rows;
