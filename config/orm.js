@@ -1,7 +1,7 @@
 // Import dependencies
 const connection = require("./connection");
 
-// Define orm object
+// Define ORM object
 const orm = {
   // Define selectAll method
   selectAll: async () => {
@@ -13,17 +13,17 @@ const orm = {
   // Define insertOne method
   insertOne: async (burgerName, isDevoured) => {
     const sql = "INSERT INTO burgers (burger_name, devoured) VALUES (?, ?);";
-    const [rows] = await connection.query(sql, [burgerName, isDevoured])
-    return rows;
+    const [results] = await connection.query(sql, [burgerName, isDevoured])
+    return results;
   },
 
   // Define updateOne method
   updateOne: async (burger_name) => {
     const sql = "UPDATE burgers SET `devoured` = 1 WHERE burger_name = ?";
-    const [rows] = await connection.query(sql, burger_name)
-    return rows;
+    const [results] = await connection.query(sql, burger_name)
+    return results;
   }
 }
 
-// Export ORM
+// Export ORM object
 module.exports = orm;

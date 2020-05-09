@@ -10,17 +10,17 @@ class Burger {
 
   // Define selectBurgers method
   static async selectBurgers () {
-    orm.selectAll();
+    return orm.selectAll();
   }
 
   // Define insertBurger method
   async insertBurger () {
-    orm.insertOne(this.burger_name, this.devoured);
+    return orm.insertOne(this.burger_name, this.devoured);
   }
 
   // Define updateBurger method
   async updateBurger () {
-    orm.updateOne(this.burger_name);
+    return orm.updateOne(this.burger_name);
   }
 }
 

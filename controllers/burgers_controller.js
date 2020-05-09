@@ -6,7 +6,7 @@ const Burger = require("../models/burger");
 router.get('/', async (req, res) => {
   const data = await Burger.selectBurgers();
   res.render('index', { burgers: data });
-})
+});
 
 // API routes
 router.get('/api/burgers', async (req, res) => {
@@ -16,7 +16,7 @@ router.get('/api/burgers', async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-})
+});
 
 router.post('/api/burgers', async (req, res) => {
   try {
@@ -26,7 +26,7 @@ router.post('/api/burgers', async (req, res) => {
   } catch (err) {
     res.status(500).json(err)
   }
-})
+});
 
 router.patch('/api/burgers/:id', async (req, res) => {
   const burger = Object.assign(burger, req.body, { id: req.params.id });
@@ -37,7 +37,7 @@ router.patch('/api/burgers/:id', async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-})
+});
 
 // Export router
 module.exports = router;
