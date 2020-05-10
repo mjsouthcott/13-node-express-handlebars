@@ -2,18 +2,19 @@
 const mysql = require("mysql2");
 require("dotenv").config();
 
-let defaultConfig = {
+const defaultConfig = {
   host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_DATABASE
 }
 
-// Use Heroku database config if it exists
-if (process.env.JAWSDB_URL) defaultConfig = process.env.JAWSDB_URL;
+let connection;
 
 // Create database connection
-let connection = mysql.createConnection(defaultConfig);
+if (process.env.JAWSDB_URL) connection = mysql.createConnection(process.env.JAWSDB_URL);
+else connection = mysql.createConnection(defaultConfig);
 
 // Export database connection
 module.exports = connection.promise();

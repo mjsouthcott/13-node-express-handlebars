@@ -16,7 +16,7 @@ app.engine("handlebars", exphbs({ defaultLayout: 'main' }));
 app.set("view engine", "handlebars");
 
 // Set port to 3000
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 6060;
 
 // Start server
 app.listen(PORT, () => console.log(`Server listening on: http://localhost:${PORT}.`));
