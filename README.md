@@ -4,6 +4,16 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/mjsouthcott/12-employee-tracker)
 ![GitHub top language](https://img.shields.io/github/languages/top/mjsouthcott/13-node-express-handlebars)
 
+## Table of Contents
+
+* [Description](https://github.com/mjsouthcott/13-node-express-handlebars#Description)
+* [Technologies Used](https://github.com/mjsouthcott/13-node-express-handlebars#Technologies%20Used)
+* [User Story](https://github.com/mjsouthcott/13-node-express-handlebars#User%20Story)
+* [Installation](https://github.com/mjsouthcott/13-node-express-handlebars#Installation)
+* [Usage](https://github.com/mjsouthcott/13-node-express-handlebars#Usage)
+* [License](https://github.com/mjsouthcott/13-node-express-handlebars#License)
+* [Contributing](https://github.com/mjsouthcott/13-node-express-handlebars#Contributing)
+
 ## Description
 
 This is a web application that allows users to keep track of burgers they want to eat and have eaten. Burgers are stored in a MySQL database and rendered to the browser. Request and response routing is done using HTTP.
@@ -28,12 +38,7 @@ I WANT to be able to view burgers I want to eat and have eaten
 SO THAT I can eat all of the burgers
 ```
 
-## Table of Contents
 
-* [Installation](https://github.com/mjsouthcott/12-employee-tracker#Installation)
-* [Usage](https://github.com/mjsouthcott/12-employee-tracker#Usage)
-* [License](https://github.com/mjsouthcott/12-employee-tracker#License)
-* [Contributing](https://github.com/mjsouthcott/12-employee-tracker#Contributing)
 
 ## Installation
 
