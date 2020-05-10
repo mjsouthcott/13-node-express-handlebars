@@ -53,9 +53,7 @@ to install the dependencies, followed by
 ```
 node server.js
 ```
-to run the application.
-
-Open a browser window and go to
+to run the application. Open a browser window and go to
 ```
 https://localhost:3000
 ```
