@@ -9,6 +9,9 @@ const defaultConfig = {
   database: process.env.DB_DATABASE
 }
 
+// Use Heroku database config if it exists
+if(process.env.JAWSDB_URL) defaultConfig = process.env.JAWSDB_URL;
+
 // Create database connection
 let connection = mysql.createConnection(defaultConfig);
 
