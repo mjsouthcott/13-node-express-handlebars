@@ -17,7 +17,7 @@ $(document).ready(() => {
   });
   
   $('ul button').on('click', async (e) => { 
-    const id = $(e.target).data('id')
+    const id = $(e.target).data('id');
   
     const response = await fetch(`/api/burgers/${id}`, {
       method: 'PATCH',

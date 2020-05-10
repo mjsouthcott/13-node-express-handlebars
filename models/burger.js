@@ -1,10 +1,11 @@
 // Import dependencies
 const { selectAll, insertOne, updateOne } = require("../config/orm");
+const to = require('to-case');
 
 // Define Burger class
 class Burger {
   constructor ({ burgerName }) {
-    this.burgerName = burgerName;
+    this.burgerName = to.title(burgerName);
   }
 
   // Define selectBurgers method
