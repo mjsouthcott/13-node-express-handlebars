@@ -1,0 +1,77 @@
+<section class="hero is-success">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-size-3">
+        Eat-Da-Burger!
+      </h1>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column notification">
+        <h2 class="title is-size-5">
+          To Devour
+        </h2>
+        <div class="content">
+          <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            <li>
+              <div class="level">
+                <div class="level-left">
+                  <span class="icon">
+                    <i class="fas fa-hamburger"></i>
+                  </span>
+                  <span>
+                    <strong>{{burgerName}}</strong>
+                  </span>
+                </div>
+                <div class="level-right">
+                  <button class="button" data-id="{{id}}" data-devoured="{{devoured}}">Devour it!</button>
+                </div>
+              </div>
+            </li>
+            {{/if}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      <div class="column notification">
+        <h2 class="title is-size-5">
+          Devoured
+        </h2>
+        <div class="content">
+          <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            <li>
+              <div class="level">
+                <div class="level-left">
+                  <span class="icon">
+                    <i class="fas fa-hamburger"></i>
+                  </span>
+                  <strong>
+                    Cheeseburger
+                  </strong>
+                </div>
+              </div>
+            </li>
+            {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="field">
+      <label class="label">Enter a new burger to devour</label>
+      <div class="control">
+        <textarea class="textarea" placeholder="Burger name"></textarea>
+      </div>
+    </div>
+    <div class="control">
+      <button class="button is-link" id="submit">Submit</button>
+    </div>
+  </div>
+</section>

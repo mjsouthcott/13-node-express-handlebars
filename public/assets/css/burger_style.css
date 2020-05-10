@@ -1,0 +1,28 @@
+.column:first-child {
+  margin-right: 1.75rem;
+}
+
+.column {
+  min-height: 400px;
+  margin-bottom: 24px;
+}
+
+ul {
+  margin-right: 32px;
+}
+
+li {
+  list-style: none;
+}
+
+.level {
+  height: 40px;
+}
+
+span {
+  margin-right: 20px;
+}
+
+.textarea {
+  resize: none;
+}
