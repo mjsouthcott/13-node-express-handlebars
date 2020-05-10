@@ -46,6 +46,8 @@ git clone
 ```
 followed by the copied URL.
 
+To launch the deployed application, click the following link: https://stark-chamber-06608.herokuapp.com/.
+
 ## Usage
 
 Launch Git Bash and navigate to the application's root directory. Once there, use
@@ -58,7 +60,7 @@ node server.js
 ```
 to run the application. Open a browser window and go to
 ```
-https://localhost:3000
+https://localhost:6060
 ```
 
 ![Step 1](https://github.com/mjsouthcott/13-node-express-handlebars/blob/master/public/assets/images/image1.PNG)
