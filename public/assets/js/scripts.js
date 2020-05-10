@@ -16,17 +16,13 @@ $(document).ready(() => {
     if (response.ok) location.reload();
   });
   
-  // TODO: Fix this
-  $('button').on('click', async () => { 
-    const id = $(this).data('id');
-
-    // Test
-    console.log(id)
+  $('ul button').on('click', async (e) => { 
+    const id = $(e.target).data('id')
   
-    // const response = await fetch(`/api/burgers/${id}`, {
-    //   method: 'PATCH',
-    //   headers: { 'Content-type': 'application/json' }
-    // });
+    const response = await fetch(`/api/burgers/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-type': 'application/json' }
+    });
   
     console.log(response);
     if (response.ok) location.reload();
