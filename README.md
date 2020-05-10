@@ -51,17 +51,27 @@ npm install
 ```
 to install the dependencies, followed by
 ```
-node index.js
+node server.js
 ```
-to run the application. Select options from the menu to view, add, update and delete database contents.
+to run the application.
+
+Open a browser windows and go to `https://localhost:300`
 
 ![Step 1](https://github.com/mjsouthcott/13-node-express-handlebars/blob/master/public/assets/images/image1.PNG)
 
+To add a burger, click the text area, enter the burger name and click the "Submit" button.
+
 ![Step 2](https://github.com/mjsouthcott/13-node-express-handlebars/blob/master/public/assets/images/image2.PNG)
+
+The burger will appear in the "To Devour" column.
 
 ![Step 3](https://github.com/mjsouthcott/13-node-express-handlebars/blob/master/public/assets/images/image3.PNG)
 
+To eat a burger, click the "Devour it!" button beside it. The burger will now appear in the "Devoured" column.
+
 ![Step 4](https://github.com/mjsouthcott/13-node-express-handlebars/blob/master/public/assets/images/image4.PNG)
+
+Do this for all burger's you've eaten.
 
 ![Step 5](https://github.com/mjsouthcott/13-node-express-handlebars/blob/master/public/assets/images/image5.PNG)
 
