@@ -23,7 +23,7 @@ This is a web application that allows users to keep track of burgers they want t
 ## User Story
 
 ```
-AS A burger enthuiast
+AS A burger enthusiast
 I WANT to be able to view burgers I want to eat and have eaten
 SO THAT I can eat all of the burgers
 ```
