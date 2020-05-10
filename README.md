@@ -55,6 +55,16 @@ node index.js
 ```
 to run the application. Select options from the menu to view, add, update and delete database contents.
 
+[Step 1](https://github.com/mjsouthcott/13-node-express-handlebars/blob/master/public/assets/images/image1.PNG)
+
+[Step 2](https://github.com/mjsouthcott/13-node-express-handlebars/blob/master/public/assets/images/image2.PNG)
+
+[Step 3](https://github.com/mjsouthcott/13-node-express-handlebars/blob/master/public/assets/images/image3.PNG)
+
+[Step 4](https://github.com/mjsouthcott/13-node-express-handlebars/blob/master/public/assets/images/image4.PNG)
+
+[Step 5](https://github.com/mjsouthcott/13-node-express-handlebars/blob/master/public/assets/images/image5.PNG)
+
 ## Licence
 
 MIT License
