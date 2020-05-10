@@ -7,8 +7,8 @@
 ## Table of Contents
 
 * [Description](https://github.com/mjsouthcott/13-node-express-handlebars#Description)
-* [Technologies Used](https://github.com/mjsouthcott/13-node-express-handlebars#Technologies_Used)
-* [User Story](https://github.com/mjsouthcott/13-node-express-handlebars#User_Story)
+* [Technologies Used](https://github.com/mjsouthcott/13-node-express-handlebars#Technologies)
+* [User Story](https://github.com/mjsouthcott/13-node-express-handlebars#User)
 * [Installation](https://github.com/mjsouthcott/13-node-express-handlebars#Installation)
 * [Usage](https://github.com/mjsouthcott/13-node-express-handlebars#Usage)
 * [License](https://github.com/mjsouthcott/13-node-express-handlebars#Licence)
