@@ -6,7 +6,7 @@
 
 ## Table of Contents
 
-* [Description](https://github.com/mjsouthcott/13-node-express-handlebars#Description)
+* [Description](#description)
 * [Technologies Used](https://github.com/mjsouthcott/13-node-express-handlebars#Technologies)
 * [User Story](https://github.com/mjsouthcott/13-node-express-handlebars#User)
 * [Installation](https://github.com/mjsouthcott/13-node-express-handlebars#Installation)
