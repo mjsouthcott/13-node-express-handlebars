@@ -1,8 +1,9 @@
 # Eat-Da-Burger!
 
 ![GitHub followers](https://img.shields.io/github/followers/mjsouthcott?label=Follow&style=social)
-![GitHub repo size](https://img.shields.io/github/repo-size/mjsouthcott/12-employee-tracker)
+![GitHub repo size](https://img.shields.io/github/repo-size/mjsouthcott/12-node-express-handlebars)
 ![GitHub top language](https://img.shields.io/github/languages/top/mjsouthcott/13-node-express-handlebars)
+![GitHub last commit](https://img.shields.io/github/last-commit/mjsouthcott/13-node-express-handlebars)
 
 ## Table of Contents
 
