@@ -38,8 +38,6 @@ I WANT to be able to view burgers I want to eat and have eaten
 SO THAT I can eat all of the burgers
 ```
 
-
-
 ## Installation
 
 To install the application, click "Clone or download", copy the URL, launch Git Bash, navigate to your desired directory and use
