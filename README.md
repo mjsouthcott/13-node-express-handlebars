@@ -8,11 +8,11 @@
 
 * [Description](#description)
 * [Technologies Used](#technologies-used)
-* [User Story](https://github.com/mjsouthcott/13-node-express-handlebars#User)
-* [Installation](https://github.com/mjsouthcott/13-node-express-handlebars#Installation)
-* [Usage](https://github.com/mjsouthcott/13-node-express-handlebars#Usage)
-* [License](https://github.com/mjsouthcott/13-node-express-handlebars#Licence)
-* [Contributing](https://github.com/mjsouthcott/13-node-express-handlebars#Contributing)
+* [User Story](#user-story)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#licence)
+* [Contributing](#contributing)
 
 ## Description
 
