@@ -1,5 +1,5 @@
 // Import dependencies
-const mysql = require("mysql2/promise");
+const mysql = require("mysql2");
 require("dotenv").config();
 
 const defaultConfig = {
@@ -13,4 +13,4 @@ const defaultConfig = {
 let connection = mysql.createConnection(defaultConfig);
 
 // Export database connection
-module.exports = connection;
+module.exports = connection.promise();

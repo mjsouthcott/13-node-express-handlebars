@@ -17,7 +17,7 @@
         <div class="content">
           <ul>
             {{#each burgers}}
-            {{#if devoured}}
+            {{#unless devoured}}
             <li>
               <div class="level">
                 <div class="level-left">
@@ -25,7 +25,7 @@
                     <i class="fas fa-hamburger"></i>
                   </span>
                   <span>
-                    <strong>{{burgerName}}</strong>
+                    <strong>{{burger_name}}</strong>
                   </span>
                 </div>
                 <div class="level-right">
@@ -33,7 +33,7 @@
                 </div>
               </div>
             </li>
-            {{/if}}
+            {{/unless}}
             {{/each}}
           </ul>
         </div>
@@ -45,20 +45,18 @@
         <div class="content">
           <ul>
             {{#each burgers}}
-            {{#unless devoured}}
+            {{#if devoured}}
             <li>
               <div class="level">
                 <div class="level-left">
                   <span class="icon">
                     <i class="fas fa-hamburger"></i>
                   </span>
-                  <strong>
-                    Cheeseburger
-                  </strong>
+                  <strong>{{burger_name}}</strong>
                 </div>
               </div>
             </li>
-            {{/unless}}
+            {{/if}}
             {{/each}}
           </ul>
         </div>
