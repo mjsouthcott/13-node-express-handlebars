@@ -6,7 +6,7 @@
 
 ## Description
 
-This is a web application that allows users to keep track of burgers they want to eat and have eaten.
+This is a web application that allows users to keep track of burgers they want to eat and have eaten. Burgers are stored in a MySQL database and rendered to the browser. Request and response routing is done using HTTP.
 
 ## Technologies Used
 
@@ -55,7 +55,10 @@ node server.js
 ```
 to run the application.
 
-Open a browser windows and go to `https://localhost:300`
+Open a browser window and go to
+```
+https://localhost:3000
+```
 
 ![Step 1](https://github.com/mjsouthcott/13-node-express-handlebars/blob/master/public/assets/images/image1.PNG)
 
