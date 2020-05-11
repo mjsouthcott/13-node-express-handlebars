@@ -78,7 +78,7 @@ To eat a burger, click the "Devour it!" button beside it. The burger will now ap
 
 ![Step 4](https://github.com/mjsouthcott/13-node-express-handlebars/blob/master/public/assets/images/image4.PNG)
 
-Do this for all burger's you've eaten.
+Do this for all burgers you've eaten.
 
 ![Step 5](https://github.com/mjsouthcott/13-node-express-handlebars/blob/master/public/assets/images/image5.PNG)
 
